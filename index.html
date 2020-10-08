@@ -2,11 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset=“UTF-8”>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+
+    <link rel="stylesheet" type="text/css" href="/styles.css">
     <title>Workout Programmer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet"> -->
+
 </head>
 
 <body>
@@ -17,31 +22,34 @@
             <h1 id="programm">Programmer</h1><br><br>
             <h3> Compose your own training ! or...</h3>
             <h3>use trusted one</h3>
-            <img src="./images/workoutman.png" alt="">
+            <img src="/images/workoutman.png" alt="workoutman">
         </div>
         <!-- Welcome Info -->
         <div class="welcome-container">
-        <div class="welcome">
-<h3>Welcome !!!</h3>
-<p>
-    By using this app you will create your own Full Body training routine.<br>
-    To do this -> plase <span class="blue">Select Your Goal </span>, <span class="blue">Choose Intensity</span> and use buttons below
-    to generate your favourite exercises.<br><br>
-    Also you can use Ready To Go workouts which was tailored by our trusted trainers.<br>
-    From the menu below select which routine you are interested in.<br><br>
-    
-    To save your training please click  <span class="blue">Copy Workout </span> button below table with exercises. <br>
-    Now you can paste it to your google sheets or send it via messager/email.<br><br>
-    Buttons <span class="blue">Extra Pump</span> and <span class="blue">Extra Endurance</span> adding additional exercises to your workout.
-<br><br>
-    If you are willing to check more details about an exercise just click at it's name.
-</p>
-            
+            <div class="welcome">
+                <h3>Welcome !!!</h3>
+                <p>
+                    By using this app you will create your own Full Body training routine.<br>
+                    To do this -> plase <span class="blue">Select Your Goal </span>, <span class="blue">Choose
+                        Intensity</span> and use buttons below
+                    to generate your favourite exercises.<br><br>
+                    Also you can use Ready To Go workouts which was tailored by our trusted trainers.<br>
+                    From the menu below select which routine you are interested in.<br><br>
+
+                    To save your training please click <span class="blue">Copy Workout </span> button below table with
+                    exercises. <br>
+                    Now you can paste it to your google sheets or send it via messager/email.<br><br>
+                    Buttons <span class="blue">Extra Pump</span> and <span class="blue">Extra Endurance</span> adding
+                    additional exercises to your workout.
+                    <br><br>
+                    If you are willing to check more details about an exercise just click at it's name.
+                </p>
+
+            </div>
+            <div class="extend-container">
+                <img class="extend" src="./images/extend.png" alt="extend">
+            </div>
         </div>
-        <div class="extend-container">
-            <img class="extend" src="./images/extend.png" alt="extend">
-        </div>
-    </div>
         <!-- Dropdown menu -->
         <div class="navbar">
             <div class="topnav-centered">
@@ -59,7 +67,7 @@
                     <div class="dropdown-content">
                         <a class="split-chest" href="javascript:void(0)">Chest</a>
                         <a class="split-shoulders" href="javascript:void(0)">Shoulders</a>
-                        <a class="split-legs "href="javascript:void(0)">Legs</a>
+                        <a class="split-legs " href="javascript:void(0)">Legs</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -67,10 +75,10 @@
 
                     </button>
                     <div class="dropdown-content">
-                        <a class="lower-back-pain href="javascript:void(0)">Lower Back Pain</a>
-                        <a class="back-pain href="javascript:void(0)">Upper Back Pain</a>
-                        <a class="acl-treatment href="javascript:void(0)">ACL Treatment</a>
-                        <a class="shoulder-mobility href="javascript:void(0)">Shoulder Mobility</a>
+                        <a class="lower-back-pain href=" javascript:void(0)">Lower Back Pain</a>
+                        <a class="back-pain href=" javascript:void(0)">Upper Back Pain</a>
+                        <a class="acl-treatment href=" javascript:void(0)">ACL Treatment</a>
+                        <a class="shoulder-mobility href=" javascript:void(0)">Shoulder Mobility</a>
                     </div>
                 </div>
             </div>
@@ -103,9 +111,11 @@
         <div class="routine-details">
             <div class="routine-name">Chest Workout</div>
             <div><img src="./images/chestroutine.jpg" alt=""></div>
-            <div class="routine-text">The chest is part of a larger group of “pushing muscles” found in the upper body.<br>
+            <div class="routine-text">The chest is part of a larger group of “pushing muscles” found in the upper
+                body.<br>
                 It's a part of this group, enables you to perform pushing actions such as the barbell bench
-                press or push ups.<br>To fully develop your chest, you need to hit it with heavy weight using a couple smartly chosen exercises. </div>
+                press or push ups.<br>To fully develop your chest, you need to hit it with heavy weight using a couple
+                smartly chosen exercises. </div>
         </div>
 
         <div class="pump-container">
@@ -395,12 +405,24 @@
                     </div>
                 </div>
             </div>
+            <div class="weather-container">
+                <div class="weather-content">
+                    <form class="" action="/" method="post">
+                        Shall you go to the Gym ?
+                        <label for="cityInput">City Name: </label>
+                        <input type="text" name="cityName" id="cityInput">
+                        <button class="weather-button" type="submit"> GO </button>
 
+                        <h3>Weather is </3>
+                            <p class="weather">Like this </p>
+                    </form>
+                </div>
+            </div>
 
 
         </div>
     </div>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
 </body>
 
 </html>
